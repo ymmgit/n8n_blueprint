@@ -1,0 +1,42 @@
+# Exported from Render on 2025-09-25T09:11:49Z
+version: "1"
+services:
+- type: web
+  name: n8n-service
+  runtime: image
+  image:
+    url: docker.io/n8nio/n8n:latest
+  plan: free
+  envVars:
+  - key: TZ
+    sync: false
+  - key: N8N_PROJECT_SCHEMA
+    sync: false
+  - key: N8N_PORT
+    sync: false
+  - key: N8N_PROTOCOL
+    sync: false
+  - key: N8N_HOST
+    sync: false
+  - key: WEBHOOK_URL
+    sync: false
+  - key: N8N_EDITOR_BASE
+    sync: false
+  - key: DB_POSTGRESDB_POOL_MODE
+    sync: false
+  - key: DB_POSTGRESDB_PORT
+    sync: false
+  - key: DB_POSTGRESDB_USER
+    sync: false
+  - key: DB_POSTGRESDB_PASSWORD
+    sync: false
+  - key: DB_POSTGRESDB_HOST
+    sync: false
+  - key: DB_POSTGRESDB_DATABASE
+    sync: false
+  - key: DB_TYPE
+    sync: false
+  - key: N8N_ENCRYPTION_KEY
+    sync: false
+  region: oregon
+  autoDeployTrigger: commit
