@@ -38,5 +38,5 @@ services:
     sync: false
   - key: N8N_ENCRYPTION_KEY
     sync: false
-  region: singapore
+  region: US
   autoDeployTrigger: commit
